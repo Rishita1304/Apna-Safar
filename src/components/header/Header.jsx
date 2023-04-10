@@ -120,7 +120,7 @@ const Header = ({type}) => {
                         <div className="search">
                             <div className="search-item">
                                 <FontAwesomeIcon icon={faBed} />
-                                <input type="text" onChange={(e) => setDestination(e.target.value)} placeholder='Where are you going?' />
+                                <input type="text" onChange={(e) => setDestination(e.target.value.toLowerCase())} placeholder='Where are you going?' />
                             </div>
 
                             <div className="search-item">
