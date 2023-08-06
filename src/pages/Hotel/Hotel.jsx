@@ -11,13 +11,16 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { SearchContext } from '../../context/SearchContext';
 import { AuthContext } from '../../context/AuthContext';
 import Reserve from '../../components/reserve/Reserve';
+import { BASE_URL } from '../../Request';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Hotel = () => {
   const location = useLocation();
   console.log(location);
   const id = location.pathname.split("/")[2];
 
-  const {data, loading} = useFetch(`https://travel-site-amsc.onrender.com/api/hotels/find/${id}`);
+  const {data, loading} = useFetch(`${BASE_URL}hotels/find/${id}`);
     const navigate = useNavigate()
     const {user} = useContext(AuthContext)
     const [open,setOpen] = useState(false)
@@ -36,7 +39,7 @@ const Hotel = () => {
       if(user){
         setOpenModal(true);
       }else{
-        alert('Login to Book a hotel');
+        toast.error('Login to Book a hotel');
         // navigate('/login');
       }
     }
@@ -112,6 +115,7 @@ const Hotel = () => {
       }
       <Subscribe />
       <Footer />
+      <ToastContainer />
     </>
   )
 }

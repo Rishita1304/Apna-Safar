@@ -32,19 +32,20 @@ color: var(--PrimaryColor);
 
 .footerRow:last-child .icons .ig:hover{
     color: rgb(230, 64, 120);
-    font-size: 25px;
+    transition: all 0.2s ease-out;
+
 }
 .footerRow:last-child .icons .fb:hover{
     color: rgb(38, 24, 239);
-    font-size: 25px;
+    transition: all 0.2s ease-out;
 }
 .footerRow:last-child .icons .wp:hover{
     color: rgb(11, 209, 64);
-    font-size: 25px;
+    transition: all 0.2s ease-out;
 }
 .footerRow:last-child .icons .tw:hover{
     color: rgb(36, 218, 246);
-    font-size: 25px;
+    transition: all 0.2s ease-out;
 }
 .footerRow:first-child {
     display: flex;

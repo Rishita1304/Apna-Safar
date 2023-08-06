@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './city.css'
 import useFetch from '../../hooks/useFetch'
+import { BASE_URL } from '../../Request'
 
 const City = () => {
-    const {data, loading, error} = useFetch('https://travel-site-amsc.onrender.com/api/hotels/bycitycount?cities=romania,hungary,iran,london')
+    const {data, loading, error} = useFetch(`${BASE_URL}hotels/bycitycount?cities=romania,hungary,iran,london`)
     // console.log(data);
   return (
     <div id='city' className='cities'>

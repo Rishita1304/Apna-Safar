@@ -8,6 +8,7 @@ import { format } from 'date-fns'
 import { DateRange } from 'react-date-range'
 import { useLocation } from 'react-router-dom'
 import useFetch from '../../hooks/useFetch'
+import { BASE_URL } from '../../Request'
 
 const Hotels = () => {
 
@@ -19,7 +20,7 @@ const Hotels = () => {
     const [min, setMin] = useState(undefined);
     const [max, setMax] = useState(undefined);
 
-    const {data, loading, reFetch} = useFetch(`https://travel-site-amsc.onrender.com/api/hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`);
+    const {data, loading, reFetch} = useFetch(`${BASE_URL}hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`);
 
     const handleClick = () => {
       reFetch();

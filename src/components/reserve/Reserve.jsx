@@ -6,13 +6,16 @@ import { SearchContext } from '../../context/SearchContext'
 import useFetch from '../../hooks/useFetch'
 import './reserve.css'
 import {useNavigate} from 'react-router-dom'
+import { BASE_URL, publicRequest } from '../../Request'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Reserve = ({setOpen, hotelId}) => {
 
   const navigate = useNavigate();
 
   const [selectedRoom, setSelectedRoom] = useState([]);
-  const {data, loading, error} = useFetch(`https://travel-site-amsc.onrender.com/api/hotels/room/${hotelId}`);
+  const {data, loading, error} = useFetch(`${BASE_URL}hotels/room/${hotelId}`);
 
   const { date } = useContext(SearchContext);
 
@@ -55,7 +58,7 @@ const Reserve = ({setOpen, hotelId}) => {
 
       await Promise.all(
         selectedRoom.map((roomId) => {
-          const res = axios.put(`http://localhost:7000/api/rooms/availability/${roomId}`, {
+          const res = publicRequest.put(`/rooms/availability/${roomId}`, {
             dates: allDates,
           });
           return res.data;
@@ -64,11 +67,13 @@ const Reserve = ({setOpen, hotelId}) => {
 
       setOpen(false);
 
-      alert("Booked Hotel Room Successfully!")
-      navigate("/");
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
+      toast.success("Booked Hotel Room Successfully!")
     } catch(err) {
       console.log(err);
-      alert("Something went wrong")
+      toast.error("Something went wrong")
 
     }
   }
@@ -102,6 +107,7 @@ const Reserve = ({setOpen, hotelId}) => {
         </div>
         <button className='bookingNow' onClick={handleClick}>Booking Now</button>
       </div>
+      <ToastContainer />
     </div>
   )
 }

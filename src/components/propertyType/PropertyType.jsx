@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './propertytype.css'
 import useFetch from '../../hooks/useFetch'
+import { BASE_URL } from '../../Request'
 
 const PropertyType = () => {
 
-    const {data, loading, error} = useFetch('https://travel-site-amsc.onrender.com/api/hotels/bytype')
+    const {data, loading, error} = useFetch(`${BASE_URL}hotels/bytype`)
     console.log(data);
 
     const images =[

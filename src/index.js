@@ -4,8 +4,6 @@ import "./index.css";
 import App from "./App";
 import { SearchContextProvider } from "./context/SearchContext";
 import { AuthContextProvider } from "./context/AuthContext";
-// import { Provider } from "react-redux";
-// import store from "./redux/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

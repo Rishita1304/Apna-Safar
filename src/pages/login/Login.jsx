@@ -4,6 +4,7 @@ import { mobile } from "../../responsive";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
+import { publicRequest } from "../../Request";
 
 const Container = styled.div`
   width: 100vw;
@@ -89,7 +90,7 @@ const Login = () => {
     e.preventDefault();
     dispatch({type: "LOGIN_START"})
     try {
-      const res = await axios.post("https://travel-site-amsc.onrender.com/api/auth/login", credentials);
+      const res = await publicRequest.post("/auth/login", credentials);
       dispatch({type: "LOGIN_SUCCESS", payload: res.data})
       console.log(res);
       navigate("/");

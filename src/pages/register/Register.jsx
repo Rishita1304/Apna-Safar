@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { mobile } from "../../responsive.js";
 import { useNavigate } from "react-router-dom";
 import axios from "axios"
+import { publicRequest } from "../../Request.js";
 
 const Container = styled.div`
   width: 100vw;
@@ -68,7 +69,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://travel-site-amsc.onrender.com/api/auth/register", { username, email, password, });
+      await publicRequest.post("/auth/register", { username, email, password, });
       navigate("/");
     } catch (err) {
       console.log(err);
