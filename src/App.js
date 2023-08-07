@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './pages/home/Home';
 import Hotel from './pages/Hotel/Hotel';
 import Hotels from './pages/hotels/Hotels';
-import Login from './pages/login/Login';
+import Login from './pages/Login/Login.jsx';
 import Register from './pages/register/Register';
 import Romania from './pages/gallery/Romania';
 import Hungary from './pages/gallery/Hungary';

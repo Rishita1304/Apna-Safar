@@ -2,7 +2,6 @@ import React, {useState } from "react";
 import styled from "styled-components";
 import { mobile } from "../../responsive.js";
 import { useNavigate } from "react-router-dom";
-import axios from "axios"
 import { publicRequest } from "../../Request.js";
 
 const Container = styled.div`
