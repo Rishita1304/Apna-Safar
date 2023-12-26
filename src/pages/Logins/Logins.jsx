@@ -64,8 +64,8 @@ const Login = () => {
     const [loginRes, setLoginRes] = useState({})
     const [loginresReceived, setLoginResReceived] = useState()
     const [loginPasswordRequired, setLoginPasswordRequired] = useState(false)
-    const [loginUsername, setLoginUsername] = useState("")
-    const [loginPassword, setLoginPassword] = useState("")
+    const [loginUsername, setLoginUsername] = useState("abc123")
+    const [loginPassword, setLoginPassword] = useState("abc123")
     const {dispatch} = useContext(AuthContext)
     const navigate = useNavigate();
 
@@ -101,11 +101,11 @@ const Login = () => {
                         )}
                         <div className="input-field">
                             <i className="fas fa-envelope"></i>
-                            <input type="text" placeholder="Username" value={loginUsername} spellCheck="false" required onChange={(e) => setLoginUsername(e.target.value)}/>
+                            <input type="text" placeholder="Username" value="abc123" spellCheck="false" onChange={(e) => setLoginUsername(e.target.value)}/>
                         </div>
                         <div className="input-field password">
                             <i className="fas fa-eye" onClick={() => setHideShowPassword(!hideshowPassword)}></i>
-                            <input type={!hideshowPassword ? "password" : "text"} placeholder="Password" value={loginPassword} required onChange={(e) => setLoginPassword(e.target.value)}/>
+                            <input type={!hideshowPassword ? "password" : "text"} placeholder="Password" value="abc123" onChange={(e) => setLoginPassword(e.target.value)}/>
                             <div className="errormsg">
                                 {loginPasswordRequired ? "Fill out Password" : undefined}
                             </div>

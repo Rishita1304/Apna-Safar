@@ -16,7 +16,7 @@ const Header = ({type}) => {
 
     const {user} = useContext(AuthContext);    
 
-    const [destination, setDestination] = useState("")
+    const [destination, setDestination] = useState("romania")
     const [openDate, setOpenDate] = useState(false)
     const [date, setDate] = useState([
         {
@@ -120,7 +120,10 @@ const Header = ({type}) => {
                         <div className="search">
                             <div className="search-item">
                                 <FontAwesomeIcon icon={faBed} />
-                                <input type="text" onChange={(e) => setDestination(e.target.value.toLowerCase())} placeholder='Where are you going?' />
+                                <input type="text" 
+                                // value="romania"
+                                // onChange={(e) => setDestination(e.target.value.toLowerCase())}
+                                 placeholder='Romania' />
                             </div>
 
                             <div className="search-item">
