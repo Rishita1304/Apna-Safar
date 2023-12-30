@@ -9,6 +9,7 @@ import { DateRange } from 'react-date-range'
 import { useLocation } from 'react-router-dom'
 import useFetch from '../../hooks/useFetch'
 import { BASE_URL } from '../../Request'
+import { TailSpin } from 'react-loader-spinner'
 
 const Hotels = () => {
 
@@ -91,7 +92,20 @@ const Hotels = () => {
           <div className="hotelsCol">
             <div className='listHotels'>
               {
-                loading ? (<h2>Loading...</h2>) : (
+                loading ? (
+                  <div className="cityDesc2">
+                  <TailSpin
+                  visible={true}
+                  height="40"
+                  width="40"
+                  color="rgb(3, 91, 131)"
+                  ariaLabel="tail-spin-loading"
+                  radius="1"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                  />
+                  </div>
+                ) : (
                   <>
                     {data.map((item => 
                       <ItemHotels item={item} key={item._id} />

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './propertytype.css'
 import useFetch from '../../hooks/useFetch'
 import { BASE_URL } from '../../Request'
+import { TailSpin } from 'react-loader-spinner'
 
 const PropertyType = () => {
 
@@ -20,7 +21,18 @@ return (
     <div className="pList">
         {/* <p className="cityDesc1">Rent these properties at minimal prices!</p> */}
       {loading ? (
-        "loading"
+        <div className="cityDesc1">
+        <TailSpin
+        visible={true}
+        height="40"
+        width="40"
+        color="rgb(3, 91, 131)"
+        ariaLabel="tail-spin-loading"
+        radius="1"
+        wrapperStyle={{}}
+        wrapperClass=""
+        />
+        </div>
       ) : (
         <>
           {data &&

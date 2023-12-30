@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './city.css'
 import useFetch from '../../hooks/useFetch'
 import { BASE_URL } from '../../Request'
+import { TailSpin } from 'react-loader-spinner'
 
 const City = () => {
     const {data, loading, error} = useFetch(`${BASE_URL}hotels/bycitycount?cities=romania,hungary,iran,london`)
@@ -12,7 +13,16 @@ const City = () => {
         <h2 className="cityTitle">Explore!</h2>
         <p className='cityDesc'>These popular destinations have a lot to offer!</p>
         <div className="cityImages">
-            { loading? "Loading Please Wait" :(
+            { loading? <TailSpin
+  visible={true}
+  height="40"
+  width="40"
+  color="rgb(3, 91, 131)"
+  ariaLabel="tail-spin-loading"
+  radius="1"
+  wrapperStyle={{}}
+  wrapperClass=""
+  /> :(
                 <>
                     <div className="cityImage">
                         <Link to='/romania' >
