@@ -27,7 +27,7 @@ const City = () => {
                     <div className="cityImage">
                         <Link to='/romania' >
                             <div className="cityImg">
-                                <img src="./assets/images/roo.jpg" alt="Romania" />
+                                <img loading="lazy" src="https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151215/roo_kjpfc7.jpg" alt="Romania" />
                             </div>
                             <h4 className='cityImgTitle'>Romania</h4>
                             <span className='cityImgProperties'>{data[0]} properties</span>
@@ -36,7 +36,7 @@ const City = () => {
                     <div className="cityImage">
                         <Link to='/hungary'>
                             <div className="cityImg">
-                                <img src="./assets/images/hu.jpg" alt="Hungary" />
+                                <img loading="lazy" src="https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150029/hu_ypmm6a.jpg" alt="Hungary" />
                             </div>
                             <h4 className='cityImgTitle'>Hungary</h4>
                             <span className='cityImgProperties'>{data[1]} properties</span>
@@ -45,7 +45,7 @@ const City = () => {
                     <div className="cityImage">
                         <Link to='/iran'>
                             <div className="cityImg">
-                                <img src="./assets/images/ir.jpg" alt="Iran" />
+                                <img loading="lazy" src="https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150040/ir_yakrly.jpg" alt="Iran" />
                             </div>
                             <h4 className='cityImgTitle'>Iran</h4>
                             <span className='cityImgProperties'>{data[2]} properties</span>
@@ -54,7 +54,7 @@ const City = () => {
                     <div className="cityImage">
                         <Link to='/london'>
                             <div className="cityImg">
-                                <img src="./assets/images/lo.jpg" alt="London" />
+                                <img loading="lazy" src="https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150066/lo_fdorlf.jpg" alt="London" />
                             </div>
                             <h4 className='cityImgTitle'>London</h4>
                             <span className='cityImgProperties'>{data[3]} properties</span>

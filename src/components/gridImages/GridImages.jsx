@@ -6,61 +6,61 @@ const GridImages = () => {
 
   const IMAGES =
   [{
-      src: "./assets/images/grid/1.jpg",
-      thumbnail: "./assets/images/grid/1.jpg",
+      src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151248/1_yiy7sn.jpg",
+      thumbnail: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151248/1_yiy7sn.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
       caption: "Myrland, Nordland, Norway"
   },
   {
-      src: "./assets/images/grid/2.jpg",
-      thumbnail: "./assets/images/grid/2.jpg",
+      src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151250/2_lrmqr9.jpg",
+      thumbnail: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151250/2_lrmqr9.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
       caption: "Sodankylä, Finland"
   },
 
   {
-      src: "./assets/images/grid/3.jpg",
-      thumbnail: "./assets/images/grid/3.jpg",
+      src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151250/3_n2ryqz.jpg",
+      thumbnail: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151250/3_n2ryqz.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
       caption: "Iceland"
   }, 
   {
-      src: "./assets/images/grid/4.jpg",
-      thumbnail: "./assets/images/grid/4.jpg",
+      src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151250/4_vaqmr2.jpg",
+      thumbnail: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151250/4_vaqmr2.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
       caption: "Algeria"
   },
   {
-      src: "./assets/images/grid/5.jpg",
-      thumbnail: "./assets/images/grid/5.jpg",
+      src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151253/5_mqmtu3.jpg",
+      thumbnail: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151253/5_mqmtu3.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
       caption: "Scotland, United Kingdom"
   },
 
   {
-      src: "./assets/images/grid/6.jpg",
-      thumbnail: "./assets/images/grid/6.jpg",
+      src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151253/6_izb1ei.jpg",
+      thumbnail: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151253/6_izb1ei.jpg",
       thumbnailWidth: 320,
       thumbnailHeight: 174,
       caption: "Santa Cristina Valgardena, Trentino-Alto Adige, Italia"
   }, 
 
   {
-    src: "./assets/images/grid/7.jpg",
-    thumbnail: "./assets/images/grid/7.jpg",
+    src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151252/7_g48com.jpg",
+    thumbnail: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151252/7_g48com.jpg",
     thumbnailWidth: 320,
     thumbnailHeight: 174,
     caption: "Maldives"
   }, 
 
   {
-    src: "./assets/images/grid/8.jpg",
-    thumbnail: "./assets/images/grid/8.jpg",
+    src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151254/8_jcujdw.jpg",
+    thumbnail: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151254/8_jcujdw.jpg",
     thumbnailWidth: 320,
     thumbnailHeight: 174,
     caption: "Braies, Trentino-Alto Adige, Italy"

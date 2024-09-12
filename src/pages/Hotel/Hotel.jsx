@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useContext, useState } from 'react'
 import Header from '../../components/header/Header'
 import PhotoAlbum from "react-photo-album";
+import { TailSpin } from 'react-loader-spinner'
 import './hotel.css'
 import Subscribe from '../../components/subscribe/Subscribe';
 import Footer from '../../components/footer/Footer';
@@ -46,37 +47,37 @@ const Hotel = () => {
 
     const photos = [
       {
-        src: "../assets/images/hotels/1.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726168984/7.1_m3xpyk.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hotels/1.1.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151607/1.1_cxeowh.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hotels/1.2.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151608/1.2_khnt4h.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hotels/1.3.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151608/1.3_wca4le.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hotels/1.4.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151609/1.4_uzdogr.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hotels/1.5.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151610/1.5_skcwgy.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hotels/1.6.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726151613/1.6_xdnqr5.jpg",
         width: 800,
         height: 600
       }
@@ -86,7 +87,18 @@ const Hotel = () => {
     <>
       <Header type="smallHeader" />
       {
-        loading ? (<h2>Loading...</h2>) : (
+        loading ? (<div className="cityDesc2">
+          <TailSpin
+          visible={true}
+          height="40"
+          width="40"
+          color="rgb(3, 91, 131)"
+          ariaLabel="tail-spin-loading"
+          radius="1"
+          wrapperStyle={{}}
+          wrapperClass=""
+          />
+          </div>) : (
           <div className="hotelContainer">
             <div className="hotelRow">
                 <div className="hotelCol">

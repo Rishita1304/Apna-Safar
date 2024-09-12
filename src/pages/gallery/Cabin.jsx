@@ -12,37 +12,37 @@ const Cabin = () => {
 
     const photos = [
       {
-        src: "../assets/images/ca1.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150026/ca1_rwzqet.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ca2.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150007/ca2_g2niuy.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ca3.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150008/ca3_evmsa9.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ca4.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150013/ca4_a7mgsl.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ca5.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150011/ca5_risimj.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ca6.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150021/ca6_yxc8pa.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ca7.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150021/ca7_gzlyjq.jpg",
         width: 800,
         height: 600
       }

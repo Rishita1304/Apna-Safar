@@ -12,37 +12,37 @@ const Romania = () => {
 
     const photos = [
       {
-        src: "../assets/images/ro1.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726143560/ro1_csysyw.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ro2.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726143557/ro2_u75v5v.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ro3.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726143572/ro3_exbq60.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ro4.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726143550/ro4_nbdxqm.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ro5.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726143553/ro5_m92ldo.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ro6.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726143552/ro6_ycnp3t.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ro7.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726143560/ro7_dkqykp.jpg",
         width: 800,
         height: 600
       }
@@ -54,13 +54,12 @@ const Romania = () => {
           <div className="hotelContainer">
           <div className="hotelRow">
                 <div className="hotelCol">
-                  {/* <h2 className='hotelTitle'>Relax casa Victoria</h2> */}
                   <h2 className='hotelTitle'><FontAwesomeIcon icon={faLocation} /> Romania</h2><hr />
 
                 </div>
             </div>
             <div className="hotelRow">
-              <PhotoAlbum layout="rows" photos={photos} />
+              <PhotoAlbum layout="rows" photos={photos}  imgProps={{ loading: "lazy" }} />
             </div>
             
           </div>

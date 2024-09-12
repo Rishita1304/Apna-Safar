@@ -11,10 +11,10 @@ const PropertyType = () => {
     console.log(data);
 
     const images =[
-        "./assets/images/ho.jpg",
-        "./assets/images/ap.jpg",
-        "./assets/images/re.jpg",
-        "./assets/images/ca.jpg"
+        "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150012/ho_ir0auj.jpg",
+        "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150995/ap_m3gjtk.jpg",
+        "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726149580/re_jvnjug.jpg",
+        "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150002/ca_rosdix.jpg"
     ]
 // console.log(data[0].type);
 return (
@@ -42,6 +42,7 @@ return (
                   src={img}
                   alt=""
                   className="pListImg"
+                  loading="lazy"
                 />
                 <div className="pListTitles">
                   <h1>{data[i]?.type}</h1>

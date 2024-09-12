@@ -12,37 +12,37 @@ const Iran = () => {
 
     const photos = [
       {
-        src: "../assets/images/ir1.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150053/ir1_rdo4yp.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ir2.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150051/ir2_cskd8r.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ir3.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150057/ir3_vzvzhe.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ir4.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150058/ir4_ktygdq.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ir5.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150051/ir5_gyxrrp.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ir6.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150052/ir6_ofo9k3.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/ir7.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150057/ir7_bv8vav.jpg",
         width: 800,
         height: 600
       }
@@ -60,7 +60,7 @@ const Iran = () => {
                 </div>
             </div>
             <div className="hotelRow">
-              <PhotoAlbum layout="rows" photos={photos} />
+              <PhotoAlbum layout="rows" photos={photos}  imgProps={{ loading: "lazy" }} />
             </div>
             
           </div>

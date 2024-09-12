@@ -12,37 +12,38 @@ const Hungary = () => {
 
     const photos = [
       {
-        src: "../assets/images/hu1.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150045/hu1_sf7qcj.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hu2.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150035/hu3_v00gyt.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hu3.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150046/hu6_jr3eiw.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hu6.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150037/hu5_wvxzgl.jpg",
+        width: 800,
+        height: 600
+      },
+
+      {
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150036/hu4_u1onoc.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hu5.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150034/hu2_wpyjzc.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hu4.jpg",
-        width: 800,
-        height: 600
-      },
-      {
-        src: "../assets/images/hu7.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150041/hu7_faltjk.jpg",
         width: 800,
         height: 600
       }
@@ -60,7 +61,7 @@ const Hungary = () => {
                 </div>
             </div>
             <div className="hotelRow">
-              <PhotoAlbum layout="rows" photos={photos} />
+              <PhotoAlbum layout="rows" photos={photos}  imgProps={{ loading: "lazy" }} />
             </div>
             
           </div>

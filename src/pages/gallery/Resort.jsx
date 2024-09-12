@@ -12,37 +12,37 @@ const Resort = () => {
 
     const photos = [
       {
-        src: "../assets/images/re1.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726149591/re1_fzgoxc.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/re2.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726149597/re2_ahkvzf.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/re3.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726149589/re3_fnmmmd.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/re4.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726149595/re4_okq2dy.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/re5.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726149602/re5_ci6q4u.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/re6.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726149602/re6_i6p6u4.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/re7.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726149606/re7_vx1v0w.jpg",
         width: 800,
         height: 600
       }

@@ -12,37 +12,37 @@ const Hotell = () => {
 
     const photos = [
       {
-        src: "../assets/images/hot1.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150022/hot1_xysf0t.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hot2.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150029/hot2_jrerva.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hot3.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150025/hot3_vryq4y.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hot4.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150029/hot4_yoyc7v.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hot5.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150028/hot5_yguled.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hot6.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150030/hot6_afgd1e.jpg",
         width: 800,
         height: 600
       },
       {
-        src: "../assets/images/hot7.jpg",
+        src: "https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150031/hot7_is2gqq.jpg",
         width: 800,
         height: 600
       }
