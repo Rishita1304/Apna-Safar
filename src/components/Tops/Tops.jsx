@@ -51,8 +51,8 @@ const Tops = () => {
           <Link to="/">
             <img src="https://res.cloudinary.com/dysxdrm1l/image/upload/v1726150074/petra_bl3fhs.jpg" alt="Petra" />
             <div className="cImgDesc">
-              <h2 className='cImgTitle'>Petra</h2>
-              <span className="cImgP">10 properties</span>
+              <h2 className='cImgTitle'>Petra </h2>
+              <span className="cImgP">9 properties</span>
             </div>
           </Link>
         </div>
